@@ -1,6 +1,6 @@
 .venv
 .vscode
 app/__pycache__
+app/solution/__pycache__
 app/log.py
-tests/
 *.yaml

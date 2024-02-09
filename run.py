@@ -1,12 +1,13 @@
+#!/usr/bin/env python3
+
 import sys
 
-import app.function as fn
-import app.log
+from app import function as fn
 
 
 def main() -> None:
     """
-    ### Entry point.
+    # Entry point.
     """
 
     fn.check_if_linux()
@@ -25,7 +26,7 @@ def main() -> None:
         backup.create_snapshot()
 
     if "--retention" in sys.argv:
-        backup.run_retention_policies()
+        backup.run_retention_policy()
 
     if "--sync" in sys.argv:
         backup.sync_to_target()
